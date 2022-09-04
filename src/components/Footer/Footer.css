@@ -66,6 +66,10 @@
    flex-direction: row;
 }
 
+.footer-contents .footer-nav a:hover{
+   color: #fff;
+}
+
 .uk-gird>* {
    padding-left: 20px;
    flex: none;
