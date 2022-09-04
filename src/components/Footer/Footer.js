@@ -8,6 +8,7 @@ import instagram from "../image/instagram.png";
 import instagram_hover from "../image/instagram_hover.png";
 import youtube from "../image/youtube.png";
 import youtube_hover from "../image/youtube_hover.png";
+import location_pin from "../image/location_pin.png";
 
 function Footer(props) {
    const [isTwitterHovering, setIsTwitterHovering] = useState(0);
@@ -130,7 +131,23 @@ function Footer(props) {
                </dl>
             </div>
          </div>
-         <div className="footer-copy"></div>
+         <div className="footer-copy">
+            <div className="uk-clearfix">
+               <div className="uk-float-left">
+                  <a>
+                     <span className="ns-pin">
+                        <img src={location_pin} />
+                     </span>
+                     <span className="country-pin-label">대한민국</span>
+                  </a>
+                  ⓒ 2022 Nike, Inc. All Rights Reserved
+               </div>
+               <div className="uk-float-right menu-term">
+                  <a>이용약관</a>
+                  <a>개인정보처리방침</a>
+               </div>
+            </div>
+         </div>
          <div className="footer-info"></div>
       </div>
    );
